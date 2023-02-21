@@ -5,5 +5,8 @@ input.onGesture(Gesture.Shake, function () {
 let Pases = 0
 Pases = 0
 basic.forever(function () {
-	
+    led.plotBarGraph(
+    input.acceleration(Dimension.X),
+    1023
+    )
 })
